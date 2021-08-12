@@ -5,10 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>slideShow</title>
 </head>
 <body>
-    
+    <div class="container-one">
+        <div class="mySlides fade">
+            <div class="number">1 / 4</div>
+            <img src="images/wallpaperflare.com_wallpaper (1).jpg" alt="" style="width:100%;height:100vh;">
+            <div class="text">Caption one</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="number">2 / 4</div>
+            <img src="images/wallpaperflare.com_wallpaper (2).jpg" alt="" style="width:100%;height:100vh;">
+            <div class="text">Caption two</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="number">3 / 4</div>
+            <img src="images/wallpaperflare.com_wallpaper (3).jpg" alt="" style="width:100%;height:100vh;">
+            <div class="text">Caption three</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="number">4 / 4</div>
+            <img src="images/wallpaperflare.com_wallpaper (5).jpg" alt="" style="width:100%;height:100vh;">
+            <div class="text">Caption Four</div>
+        </div>
+
+        <a onclick="plusSlide(-1)" class="prev">&#10094;</a>
+        <a onclick="plusSlide(1)" class="next">&#10095;</a>
+    </div>
+
+    <br>
+
+    <div style="text-align:center;width:100%;position:absolute;bottom:6px;">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
